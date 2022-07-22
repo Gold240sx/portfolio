@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+/* 
+* {
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;;
+} 
+
+body {
+  margin: 0;
+  overflow-y: none;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins SemiBold";
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  font-size: 12px;
+  background-color: #1f2235;
+}
+
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #ff5823;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: var(--white);
+
+  font-size: 12px;
+  background-color: #ff5823;
+}
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+} 
+
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, span {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #00D0F0;
+  border: none;
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+.primary-btn:hover {
+  color: aliceblue;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: var(--white);
+  border: none;
+  font-size: 12px;
+  background-color: #99cb0e;
+}
+
+.highlighted-btn:hover {
+  background-color: #cce110;
+  transition:  .7s ease;
+}
+
+.pdf {
+  margin-top: 20px;
+  padding-left: 55px;
+  white-space: nowrap;
+  padding-right: 10px;
+  width: unset;
+  z-index: -2;
+  background-color: unset;
+  border: 2px solid #61dafb;
+  color:hsl(0, 0%, 25%)
+}
+
+.pdf:hover {
+  background-color: #aa1701 !important;
+  border: 2px solid #aa1701;
+  color: white !important;
+  padding-left: 15px;
+}
+
+a[href$=".pdf"]:before {
+  width: 32px;
+  height: 32px;
+  background: url("http://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png");
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  margin-right: -75px;
+  margin-bottom: -10px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1110px) {
+
+  a[href$=".pdf"]:before {
+    display: none;
+  }
+
+
+  .pdf {
+    padding-inline: 20px;
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+
+  a[href$=".pdf"]:before {
+    width: 32px;
+    height: 32px;
+    background: url("http://wwwimages.adobe.com/content/dam/acom/en/legal/images/badges/Adobe_PDF_file_icon_32x32.png");
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    margin-right: -75px;
+    margin-bottom: -10px;
+    z-index: 3;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}

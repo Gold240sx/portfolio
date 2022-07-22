@@ -1,0 +1,155 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    color: var(--white);
+}
+
+.header-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    color: var(--white);
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+}
+
+.header-option {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-option-hamburger {
+    margin: 0 50px 0 0;
+    color: white;
+}
+
+.header-hamburger {
+    display: none;
+    color: var(--white)
+}
+
+.header-logo {
+    font-size: 50px;
+    color: var(--white);
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.header{
+    width: 90%;
+    justify-self: center !important;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: #F57F17;
+}
+
+.home-button {
+    height: 60px; 
+    width: 60px; 
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.site-name {
+    color: black;
+    font-size: 3vw;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.pink {
+    color: #FF42A1;
+    padding: 0;
+}
+
+.dark-grey {
+    color: #5F5F5F;
+    padding: 0;
+}
+
+
+span {
+    color: rgb(165, 165, 165);
+    text-shadow: unset;
+}
+
+.header-option-seperator{
+    margin: 0 50px 0 0;
+    color: var(--white);
+}
+
+.selected-header-option span {
+    color: deeppink;
+}
+
+@media only screen and (max-width: 1110px){
+    .header-parent{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .header-hamburger{
+        display: block;
+    }
+
+    .header-parent {
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+        z-index: 1;
+        opacity: 95%;
+    }
+
+    .header-options {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #2f2f31;
+        opacity: 0.8;
+        transition: all 0.8s ease-out;
+    }
+    .header-option-seperator{
+        margin: 0;
+    }
+    .selected-header-option{
+        color: var(--white);
+    }
+    .header-option{
+        color: var(--white);
+    }
+    .header-hamburger-bars{
+        font-size: 30px;
+        cursor: pointer;
+        margin:0px 10px;
+        color: var(--white);    
+    }
+    .show-hamburger-options {
+        left: 0;
+        opacity: 1;
+    }
+}

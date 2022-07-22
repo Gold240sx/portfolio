@@ -1,0 +1,21 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 670px;
+}
+
+.profile-details{
+  position: relative;
+}
+
+.profile-details h1 {
+  position: relative;
+}
+
+.profile-details h1 span {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 0;
+}
